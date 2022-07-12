@@ -1,0 +1,41 @@
+.decision {
+    padding-top: 94px;
+    padding-bottom: 94px;
+}
+.decision__icon-thumb {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 120px;
+    margin-bottom: 30px;
+    background-color: #F5F4FA;
+    border-radius: 4px;
+}
+
+.decision__title {
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 1.14;
+    letter-spacing: 0.03em;
+    text-transform: uppercase;
+    color: #212121;
+    margin-bottom: 10px;
+}
+
+.decision__content {
+    font-size: 14px;
+    line-height: 1.71;
+    letter-spacing: 0.03em;
+    color: #757575;
+}
+
+.decision__list {
+    display: flex;
+    padding-left: 0;
+}
+
+.decision__item:not(:last-child) {
+    margin-right: 30px;
+}
