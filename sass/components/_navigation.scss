@@ -1,12 +1,63 @@
 .сontact-nav {
     display: flex;
     list-style: none;
+    @include tablet {
+    flex-direction: column;
+    justify-content: center;
+    margin-left: auto;
+    margin-top: 0;
+    margin-bottom: 0;
+    padding-bottom: 21px;
+  }
+
+  @include desktop {
+    flex-direction: row;
+  }
+}
+// .contact-nav,
+// .nav {
+//     @include tablet {
+//         margin-bottom: 32px;
+//     }
+// }
+.contact-nav__item:not(:first-child) {
+    margin-bottom: 32px;
+
+  @include tablet {
+    margin-bottom: 0;
+    margin-top: 10px;
+  }
+
+  @include desktop {
+    margin-top: 0;
+    margin-left: 30px;
+  }
+}
+.contact-nav__link {
+    @include tablet {
+    display: flex;
+    align-items: center;
+    font-size: 12px;
+    line-height: 1.17;
+  }
+
+  @include desktop {
+    margin-bottom: 0;
+    padding-top: 32px;
+    padding-bottom: 32px;
+    font-size: 14px;
+    line-height: 1.14;
+  }
 }
 .nav .nav__link {
     display: inline-block;
     color: #212121;
 
     transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    @include tablet {
+        padding-top: 32px;
+        padding-bottom: 32px;
+    }
 }
 
 .сontact-nav .contact-nav__link {
@@ -23,6 +74,9 @@
 .nav {
     display: flex;
     list-style: none;
+    @include tablet {
+        margin-right: 65px;
+    }
 }
 .navigation {
     display: flex;
@@ -44,13 +98,28 @@
     justify-content: center;
     align-items: center;
 }
-
-.nav__link,
+.nav__link {
+    display: flex;
+    text-decoration: none;
+    padding-top: 32px;
+}
 .contact-nav__link {
     display: flex;
     text-decoration: none;
     padding-top: 32px;
-    padding-bottom: 32px;
+
+    @include tablet {
+    display: flex;
+    align-items: center;
+    font-size: 12px;
+    line-height: 1.17;
+  }
+}
+.contact-nav__item:first-child {
+    padding-top: 21px;
+}
+.contact-nav__link:last-child {
+    padding-top: 0;
 }
 .nav__item {
     font-family: 'Roboto';

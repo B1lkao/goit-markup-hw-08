@@ -1,6 +1,14 @@
 [class*="__container"] {
-    width: 1200px;
+    width: $desktop-width;
     padding-left: 15px;
     padding-right: 15px;
     margin: 0 auto;
+
+    @include tablet {
+    max-width: $tablet-width;
+    }
+
+    @include mobile {
+        max-width: $mobile-width;
+    }
 }
