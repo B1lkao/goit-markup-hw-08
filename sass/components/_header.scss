@@ -13,17 +13,17 @@
     display: flex;
     align-items: center;
     margin-right: 93px;
-    @include tablet {
-        margin-right: 87px;
-    }
 }
 .header__container {
     display: flex;
-    @include tablet {
-        padding-top: 0;
-        padding-bottom: 0;
-        margin-left: 0;
+      @include tablet {
+    max-width: $tablet-width;
+    padding-top: 0;
+    padding-bottom: 0;
+    @include desktop {
+        max-width: $desktop-width;
     }
+  }
 }
 .logo__accent {
     color: #2196F3;

@@ -34,8 +34,14 @@
 .decision__list {
     display: flex;
     padding-left: 0;
+    flex-wrap: wrap;
+    @include tablet {
+        flex-wrap: wrap;
+    }
+    @include desktop {
+        flex-wrap: nowrap;
+    }
 }
-
 .decision__item:not(:last-child) {
     margin-right: 30px;
 }
