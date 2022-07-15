@@ -84,12 +84,11 @@
   }
 }
 .contact-nav__item:not(:last-child) {
-    // margin-right: 50px;
+    padding-bottom: 0;
     @include tablet {
         padding-bottom: 10px;
     }
 }
-
 .contact-nav__link {
     font-family: 'Roboto';
     font-style: normal;
@@ -98,13 +97,13 @@
     line-height: 1.14;
     letter-spacing: 0.02em;
     color: #757575;
+    padding-right: 30px;
     @include tablet {
         padding-top: 0;
         padding-bottom: 0;
     }
     @include desktop{
         padding-top: 32px;
-        padding-bottom: 32px;
     }
 }
 .contact-nav__icon {
