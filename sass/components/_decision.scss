@@ -1,6 +1,8 @@
 .decision {
-    padding-top: 94px;
-    padding-bottom: 94px;
+    // padding-top: 94px;
+    // padding-bottom: 94px;
+    padding-top: 60px;
+    padding-bottom: 60px;
 }
 .decision__icon-thumb {
     display: flex;
@@ -33,15 +35,17 @@
 
 .decision__list {
     display: flex;
-    padding-left: 0;
     flex-wrap: wrap;
-    @include tablet {
-        flex-wrap: wrap;
-    }
-    @include desktop {
-        flex-wrap: nowrap;
+    gap: 30px;
+}
+.decision-item {
+    width: 100%;
+    @media screen and (min-width: 768px) {
+        width: calc((100%% - 30px) / 2);
     }
 }
 .decision__item:not(:last-child) {
-    margin-right: 30px;
+    @include desktop {
+        margin-right: 30px;
+    }
 }
