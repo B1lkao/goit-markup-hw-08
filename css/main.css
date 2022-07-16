@@ -999,7 +999,7 @@ img {
 }
 @media screen and (min-width: 1200px) {
   .decision-item {
-    width: calc((100% - 30px) / 4);
+    width: calc((100% - 90px) / 4);
   }
 }
 
@@ -1321,7 +1321,7 @@ img {
     max-width: 768px;
   }
 }
-@media screen and (min-width: 1200x) {
+@media screen and (min-width: 1200px) {
   [class*=__container] {
     max-width: 1600px;
   }
