@@ -1,12 +1,22 @@
 .work {
-    padding-top: 94px;
-    padding-bottom: 94px;
+    padding-top: 60px;
+        padding-bottom: 60px;
+    
+        @media screen and (min-width: 768px) {
+            padding-top: 94px;
+            padding-bottom: 94px;
+        }
 }
 
 .work__filter-list {
     display: flex;
-    justify-content: center;
-    margin-bottom: 50px;
+    flex-wrap: wrap;
+    row-gap: 15px;
+    column-gap: 8px;
+
+    @include tablet {
+        justify-content: center;
+    }
 }
 
 .work__filter-list .work__filter-btn {
@@ -48,7 +58,9 @@
     position: relative;
     overflow: hidden;
 }
-
+.work__container {
+    padding-right: 0;
+}
 .work__overlay {
     position: absolute;
     top: 0;
