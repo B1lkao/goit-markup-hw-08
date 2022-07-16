@@ -103,11 +103,11 @@
 .work__item {
     flex-basis: 100%;
 
-    @include tablet {
+    @media screen and (min-width: 768px) {
         flex-basis: calc((100% - 30px) / 2);
     }
 
-    @include desktop {
+    @media screen and (min-width: 1200px) {
         flex-basis: calc((100% - 30px * 2) / 3);
     }
 }
