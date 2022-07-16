@@ -3,6 +3,10 @@
     // padding-bottom: 94px;
     padding-top: 60px;
     padding-bottom: 60px;
+        @media screen and (min-width: 768px) {
+                padding-top: 94px;
+                padding-bottom: 94px;
+            }
 }
 .decision__icon-thumb {
     display: flex;
@@ -37,15 +41,35 @@
     display: flex;
     flex-wrap: wrap;
     gap: 30px;
+    // display: flex;
+    // flex-wrap: nowrap;
+    // gap: 30px;
+    // @media screen and (min-width: 480px) {
+    //     flex-direction: column;
+    // }
+    // @media screen and (max-width: 768px) {
+    //     flex-direction: column;
+    // }
 }
+// .decision-div {
+//     @media screen and (max-width: 768px) {
+//         flex-direction: column;
+//     }
+// }
 .decision-item {
     width: 100%;
+    
     @media screen and (min-width: 768px) {
-        width: calc((100%% - 30px) / 2);
+        width: calc((100% - 30px) / 2);
     }
-}
-.decision__item:not(:last-child) {
-    @include desktop {
-        margin-right: 30px;
+    
+    @media screen and (min-width: 1200px) {
+        width: calc((100% - 30px) / 4);
     }
+    // width: 100%;
 }
+// .decision__item:not(:last-child) {
+//     @include desktop {
+//         margin-right: 30px;
+//     }
+// }

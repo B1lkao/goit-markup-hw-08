@@ -726,9 +726,15 @@ img {
 }
 
 .team {
-  padding-top: 94px;
-  padding-bottom: 94px;
+  padding-top: 60px;
+  padding-bottom: 60px;
   background-color: #F5F4FA;
+}
+@media screen and (min-width: 768px) {
+  .team {
+    padding-top: 94px;
+    padding-bottom: 94px;
+  }
 }
 
 .team__title {
@@ -745,7 +751,9 @@ img {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  padding-left: 0;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  gap: 30px;
 }
 
 .team__item {
@@ -753,10 +761,17 @@ img {
   -webkit-box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
           box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
   border-radius: 0px 0px 4px 4px;
+  width: 100%;
 }
-
-.team__item:not(:last-child) {
-  margin-right: 30px;
+@media screen and (min-width: 768px) {
+  .team__item {
+    width: calc((100% - 30px) / 2);
+  }
+}
+@media screen and (min-width: 1200px) {
+  .team__item {
+    width: calc((100% - 90px) / 4);
+  }
 }
 
 .team__card-title {
@@ -923,6 +938,12 @@ img {
   padding-top: 60px;
   padding-bottom: 60px;
 }
+@media screen and (min-width: 768px) {
+  .decision {
+    padding-top: 94px;
+    padding-bottom: 94px;
+  }
+}
 
 .decision__icon-thumb {
   display: -webkit-box;
@@ -973,13 +994,12 @@ img {
 }
 @media screen and (min-width: 768px) {
   .decision-item {
-    max-width: 768px;
+    width: calc((100% - 30px) / 2);
   }
 }
-
 @media screen and (min-width: 1200px) {
-  .decision__item:not(:last-child) {
-    margin-right: 30px;
+  .decision-item {
+    width: calc((100% - 30px) / 4);
   }
 }
 
@@ -1299,6 +1319,11 @@ img {
 @media screen and (min-width: 768px) {
   [class*=__container] {
     max-width: 768px;
+  }
+}
+@media screen and (min-width: 1200x) {
+  [class*=__container] {
+    max-width: 1600px;
   }
 }
 
