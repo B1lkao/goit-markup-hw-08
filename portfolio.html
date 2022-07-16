@@ -14,7 +14,7 @@
 </head>
 <body>
     <header class="header">
-        <div class="header__container">
+        <div class="container header__container">
             <nav class="navigation">
                 <a href="WebStudio" class="navigation__logo"><span class="logo__accent">Web</span>Studio</a>
                 <ul class="nav">
@@ -56,8 +56,8 @@
                         </svg>
                     </button>
                     <ul class="mob-menu__list">
-                        <li class="mob-menu__item"><a href="index.html" class="mob-menu__link">Студия</a></li>
-                        <li class="mob-menu__item"><a href="" class="mob-menu__link mob-current">Портфолио</a></li>
+                        <li class="mob-menu__item"><a href="" class="mob-menu__link mob-current">Студия</a></li>
+                        <li class="mob-menu__item"><a href="portfolio.html" class="mob-menu__link">Портфолио</a></li>
                         <li class="mob-menu__item"><a href="" class="mob-menu__link">Контакты</a></li>
                     </ul>
                 </div>
@@ -84,289 +84,267 @@
                     </ul>
                 </div>
             </div>
-    
         </div>
     </header>
     <main>
         <section class="work">
-            <div class="work__container">
-                <ul class="work__filter-list">
-                    <li class="work__filter-item"><button type="button" class="work__filter-btn">Все</button></li>
-                    <li class="work__filter-item"><button type="button" class="work__filter-btn">Веб-сайты</button></li>
-                    <li class="work__filter-item"><button type="button" class="work__filter-btn">Приложения</button></li>
-                    <li class="work__filter-item"><button type="button" class="work__filter-btn">Дизайн</button></li>
-                    <li class="work__filter-item"><button type="button" class="work__filter-btn">Маркетинг</button></li>
-                </ul>
-                <!-- <ul class="work__list">
-                    <li class="work__item">
-                        <a href="" class="work__link">
-                            <div class="work__card-thumb">
-                                <img srcset="
-                      ./images/portfolio/portfolio1-354.jpg 354w,
-                      ./images/portfolio/portfolio1-370.jpg 370w,
-                      ./images/portfolio/portfolio1-450.jpg 450w,
-                      ./images/portfolio/portfolio1-708.jpg 708w,
-                      ./images/portfolio/portfolio1-740.jpg 740w,
-                      ./images/portfolio/portfolio1-900.jpg 900w
-                    "
-                    sizes="(min-width: 1200px) 370px, (min-width: 768px) 354px, 100vw"
-                    src="./images/portfolio/portfolio1-450.jpg"
-                                    alt="Технокряк" 
-                                    width="370" 
-                                    height="294">
-                                <div class="work__overlay">
-                                    <p class="work__pre-text">Ресурс предлагает комплексные предложения с разным уровнем функционала и
-                                    сервисов.
-                                    Все это позволит посетителю
-                                    получить
-                                    исчерпывающие сведения <br>о компании или частном лице.</p>
+            <div class="container">
+                <div class="work__container">
+                    <ul class="work__filter-list">
+                        <li class="work__filter-item"><button type="button" class="work__filter-btn">Все</button></li>
+                        <li class="work__filter-item"><button type="button" class="work__filter-btn">Веб-сайты</button></li>
+                        <li class="work__filter-item"><button type="button" class="work__filter-btn">Приложения</button></li>
+                        <li class="work__filter-item"><button type="button" class="work__filter-btn">Дизайн</button></li>
+                        <li class="work__filter-item"><button type="button" class="work__filter-btn">Маркетинг</button></li>
+                    </ul>
+                    <ul class="work__list">
+                        <li class="work__item">
+                            <a href="" class="work__link">
+                                <div class="work__card-thumb">
+                                    <img srcset="
+                                      ./images/portfolio/portfolio1-354.jpg 354w,
+                                      ./images/portfolio/portfolio1-370.jpg 370w,
+                                      ./images/portfolio/portfolio1-450.jpg 450w,
+                                      ./images/portfolio/portfolio1-708.jpg 708w,
+                                      ./images/portfolio/portfolio1-740.jpg 740w,
+                                      ./images/portfolio/portfolio1-900.jpg 900w
+                                    " sizes="(min-width: 1200px) 370px, (min-width: 768px) 354px, 100vw"
+                                        src="./images/portfolio/portfolio1-450.jpg" alt="Технокряк" width="370" height="294">
+                                    <div class="work__overlay">
+                                        <p class="work__pre-text">Ресурс предлагает комплексные предложения с разным уровнем функционала
+                                            и
+                                            сервисов.
+                                            Все это позволит посетителю
+                                            получить
+                                            исчерпывающие сведения <br>о компании или частном лице.</p>
+                                    </div>
                                 </div>
-                            </div>
-                            <div class="work__card-content">
-                                <h3 class="work__card-title">Технокряк</h3>
-                                <p class="work__card-text">Веб-сайт</p>
-                            </div>
-                        </a>
-                    </li>
-                    <li class="work__item">
-                        <a href="" class="work__link">
-                            <div class="work__card-thumb">
-                                <img  srcset="
-                      ./images/portfolio/portfolio2-354.jpg 354w,
-                      ./images/portfolio/portfolio2-370.jpg 370w,
-                      ./images/portfolio/portfolio2-450.jpg 450w,
-                      ./images/portfolio/portfolio2-708.jpg 708w,
-                      ./images/portfolio/portfolio2-740.jpg 740w,
-                      ./images/portfolio/portfolio2-900.jpg 900w
-                    "
-                    sizes="(min-width: 1200px) 370px, (min-width: 768px) 354px, 100vw"
-                    src="./images/portfolio/portfolio2-450.jpg"
-                                            alt="Постер" 
-                                            width="370" 
-                                            height="294">
-                                <div class="work__overlay">
-                                    <p class="work__pre-text">Ресурс предлагает комплексные предложения с разным уровнем функционала и
-                                        сервисов.
-                                        Все это позволит посетителю
-                                        получить
-                                        исчерпывающие сведения <br>о компании или частном лице.</p>
+                                <div class="work__card-content">
+                                    <h3 class="work__card-title">Технокряк</h3>
+                                    <p class="work__card-text">Веб-сайт</p>
                                 </div>
-                            </div>
-                            <div class="work__card-content">
-                                <h3 class="work__card-title">Постер New Orlean vs Golden Star</h3>
-                                <p class="work__card-text">Дизайн</p>
-                            </div>
-                        </a>
-                    </li>
-                    <li class="work__item">
-                        <a href="" class="work__link">
-                            <div class="work__card-thumb">
-                                <img srcset="
-                      ./images/portfolio/portfolio3-354.jpg 354w,
-                      ./images/portfolio/portfolio3-370.jpg 370w,
-                      ./images/portfolio/portfolio3-450.jpg 450w,
-                      ./images/portfolio/portfolio3-708.jpg 708w,
-                      ./images/portfolio/portfolio3-740.jpg 740w,
-                      ./images/portfolio/portfolio3-900.jpg 900w
-                    "
-                    sizes="(min-width: 1200px) 370px, (min-width: 768px) 354px, 100vw"
-                    src="./images/portfolio/portfolio3-450.jpg" alt="Ресторан" width="370" height="294">
-                                <div class="work__overlay">
-                                    <p class="work__pre-text">Ресурс предлагает комплексные предложения с разным уровнем функционала и
-                                        сервисов.
-                                        Все это позволит посетителю
-                                        получить
-                                        исчерпывающие сведения <br>о компании или частном лице.</p>
+                            </a>
+                        </li>
+                        <li class="work__item">
+                            <a href="" class="work__link">
+                                <div class="work__card-thumb">
+                                    <img srcset="
+                                      ./images/portfolio/portfolio2-354.jpg 354w,
+                                      ./images/portfolio/portfolio2-370.jpg 370w,
+                                      ./images/portfolio/portfolio2-450.jpg 450w,
+                                      ./images/portfolio/portfolio2-708.jpg 708w,
+                                      ./images/portfolio/portfolio2-740.jpg 740w,
+                                      ./images/portfolio/portfolio2-900.jpg 900w
+                                    " sizes="(min-width: 1200px) 370px, (min-width: 768px) 354px, 100vw"
+                                        src="./images/portfolio/portfolio2-450.jpg" alt="Постер" width="370" height="294">
+                                    <div class="work__overlay">
+                                        <p class="work__pre-text">Ресурс предлагает комплексные предложения с разным уровнем функционала
+                                            и
+                                            сервисов.
+                                            Все это позволит посетителю
+                                            получить
+                                            исчерпывающие сведения <br>о компании или частном лице.</p>
+                                    </div>
                                 </div>
-                            </div>
-                            <div class="work__card-content">
-                                <h3 class="work__card-title">Ресторан Seafood</h3>
-                                <p class="work__card-text">Приложение</p>
-                            </div>
-                        </a>
-                    </li>
-                    <li class="work__item">
-                        <a href="" class="work__link">
-                            <div class="work__card-thumb">
-                                <img  srcset="
-                      ./images/portfolio/portfolio4-354.jpg 354w,
-                      ./images/portfolio/portfolio4-370.jpg 370w,
-                      ./images/portfolio/portfolio4-450.jpg 450w,
-                      ./images/portfolio/portfolio4-708.jpg 708w,
-                      ./images/portfolio/portfolio4-740.jpg 740w,
-                      ./images/portfolio/portfolio4-900.jpg 900w
-                    "
-                    sizes="(min-width: 1200px) 370px, (min-width: 768px) 354px, 100vw"
-                    src="./images/portfolio/portfolio4-450.jpg"
-                                            alt="Проект" 
-                                            width="370" 
-                                            height="294">
-                                <div class="work__overlay">
-                                    <p class="work__pre-text">Ресурс предлагает комплексные предложения с разным уровнем функционала и
-                                        сервисов.
-                                        Все это позволит посетителю
-                                        получить
-                                        исчерпывающие сведения <br>о компании или частном лице.</p>
+                                <div class="work__card-content">
+                                    <h3 class="work__card-title">Постер New Orlean vs Golden Star</h3>
+                                    <p class="work__card-text">Дизайн</p>
                                 </div>
-                            </div>
-                            <div class="work__card-content">
-                                <h3 class="work__card-title">Проект Prime</h3>
-                                <p class="work__card-text">Маркетинг</p>
-                            </div>
-                        </a>
-                    </li>
-                    <li class="work__item">
-                        <a href="" class="work__link">
-                            <div class="work__card-thumb">
-                                <img  srcset="
-                      ./images/portfolio/portfolio5-354.jpg 354w,
-                      ./images/portfolio/portfolio5-370.jpg 370w,
-                      ./images/portfolio/portfolio5-450.jpg 450w,
-                      ./images/portfolio/portfolio5-708.jpg 708w,
-                      ./images/portfolio/portfolio5-740.jpg 740w,
-                      ./images/portfolio/portfolio5-900.jpg 900w
-                    "
-                    sizes="(min-width: 1200px) 370px, (min-width: 768px) 354px, 100vw"
-                    src="./images/portfolio/portfolio5-450.jpg"
-                                            alt="Проект коробки" 
-                                            width="370" 
-                                            height="294">
-                                <div class="work__overlay">
-                                    <p class="work__pre-text">Ресурс предлагает комплексные предложения с разным уровнем функционала и
-                                        сервисов.
-                                        Все это позволит посетителю
-                                        получить
-                                        исчерпывающие сведения <br>о компании или частном лице.</p>
+                            </a>
+                        </li>
+                        <li class="work__item">
+                            <a href="" class="work__link">
+                                <div class="work__card-thumb">
+                                    <img srcset="
+                                      ./images/portfolio/portfolio3-354.jpg 354w,
+                                      ./images/portfolio/portfolio3-370.jpg 370w,
+                                      ./images/portfolio/portfolio3-450.jpg 450w,
+                                      ./images/portfolio/portfolio3-708.jpg 708w,
+                                      ./images/portfolio/portfolio3-740.jpg 740w,
+                                      ./images/portfolio/portfolio3-900.jpg 900w
+                                    " sizes="(min-width: 1200px) 370px, (min-width: 768px) 354px, 100vw"
+                                        src="./images/portfolio/portfolio3-450.jpg" alt="Ресторан" width="370" height="294">
+                                    <div class="work__overlay">
+                                        <p class="work__pre-text">Ресурс предлагает комплексные предложения с разным уровнем функционала
+                                            и
+                                            сервисов.
+                                            Все это позволит посетителю
+                                            получить
+                                            исчерпывающие сведения <br>о компании или частном лице.</p>
+                                    </div>
                                 </div>
-                            </div>
-                            <div class="work__card-content">
-                                <h3 class="work__card-title">Проект Boxes</h3>
-                                <p class="work__card-text">Приложение</p>
-                            </div>
-                        </a>
-                    </li>
-                    <li class="work__item">
-                        <a href="" class="work__link">
-                            <div class="work__card-thumb">
-                                <img srcset="
-                      ./images/portfolio/portfolio6-354.jpg 354w,
-                      ./images/portfolio/portfolio6-370.jpg 370w,
-                      ./images/portfolio/portfolio6-450.jpg 450w,
-                      ./images/portfolio/portfolio6-708.jpg 708w,
-                      ./images/portfolio/portfolio6-740.jpg 740w,
-                      ./images/portfolio/portfolio6-900.jpg 900w
-                    "
-                    sizes="(min-width: 1200px) 370px, (min-width: 768px) 354px, 100vw"
-                    src="./images/portfolio/portfolio6-450.jpg"
-                                            alt="Монітор" 
-                                            width="370" 
-                                            height="294">
-                                <div class="work__overlay">
-                                    <p class="work__pre-text">Ресурс предлагает комплексные предложения с разным уровнем функционала и
-                                        сервисов.
-                                        Все это позволит посетителю
-                                        получить
-                                        исчерпывающие сведения <br>о компании или частном лице.</p>
+                                <div class="work__card-content">
+                                    <h3 class="work__card-title">Ресторан Seafood</h3>
+                                    <p class="work__card-text">Приложение</p>
                                 </div>
-                            </div>
-                            <div class="work__card-content">
-                                <h3 class="work__card-title">Inspiration has no Borders</h3>
-                                <p class="work__card-text">Веб-сайт</p>
-                            </div>
-                        </a>
-                    </li>
-                    <li class="work__item">
-                        <a href="" class="work__link">
-                            <div class="work__card-thumb">
-                                <img srcset="
-                      ./images/portfolio/portfolio7-354.jpg 354w,
-                      ./images/portfolio/portfolio7-370.jpg 370w,
-                      ./images/portfolio/portfolio7-450.jpg 450w,
-                      ./images/portfolio/portfolio7-708.jpg 708w,
-                      ./images/portfolio/portfolio7-740.jpg 740w,
-                      ./images/portfolio/portfolio7-900.jpg 900w
-                    "
-                    sizes="(min-width: 1200px) 370px, (min-width: 768px) 354px, 100vw"
-                    src="./images/portfolio/portfolio7-450.jpg" 
-                                            alt="Книжка" 
-                                            width="370" 
-                                            height="294">
-                                <div class="work__overlay">
-                                    <p class="work__pre-text">Ресурс предлагает комплексные предложения с разным уровнем функционала и
-                                        сервисов.
-                                        Все это позволит посетителю
-                                        получить
-                                        исчерпывающие сведения <br>о компании или частном лице.</p>
+                            </a>
+                        </li>
+                        <li class="work__item">
+                            <a href="" class="work__link">
+                                <div class="work__card-thumb">
+                                    <img srcset="
+                                      ./images/portfolio/portfolio4-354.jpg 354w,
+                                      ./images/portfolio/portfolio4-370.jpg 370w,
+                                      ./images/portfolio/portfolio4-450.jpg 450w,
+                                      ./images/portfolio/portfolio4-708.jpg 708w,
+                                      ./images/portfolio/portfolio4-740.jpg 740w,
+                                      ./images/portfolio/portfolio4-900.jpg 900w
+                                    " sizes="(min-width: 1200px) 370px, (min-width: 768px) 354px, 100vw"
+                                        src="./images/portfolio/portfolio4-450.jpg" alt="Проект" width="370" height="294">
+                                    <div class="work__overlay">
+                                        <p class="work__pre-text">Ресурс предлагает комплексные предложения с разным уровнем функционала
+                                            и
+                                            сервисов.
+                                            Все это позволит посетителю
+                                            получить
+                                            исчерпывающие сведения <br>о компании или частном лице.</p>
+                                    </div>
                                 </div>
-                            </div>
-                            <div class="work__card-content">
-                                <h3 class="work__card-title">Издание Limited Edition</h3>
-                                <p class="work__card-text">Дизайн</p>
-                            </div>
-                        </a>
-                    </li>
-                    <li class="work__item">
-                        <a href="" class="work__link">
-                            <div class="work__card-thumb">
-                                <img srcset="
-                      ./images/portfolio/portfolio8-354.jpg 354w,
-                      ./images/portfolio/portfolio8-370.jpg 370w,
-                      ./images/portfolio/portfolio8-450.jpg 450w,
-                      ./images/portfolio/portfolio8-708.jpg 708w,
-                      ./images/portfolio/portfolio8-740.jpg 740w,
-                      ./images/portfolio/portfolio8-900.jpg 900w
-                    "
-                    sizes="(min-width: 1200px) 370px, (min-width: 768px) 354px, 100vw"
-                    src="./images/portfolio/portfolio8-450.jpg" 
-                                            alt="Бірка" 
-                                            width="370" 
-                                            height="294">
-                                <div class="work__overlay">
-                                    <p class="work__pre-text">Ресурс предлагает комплексные предложения с разным уровнем функционала и
-                                        сервисов.
-                                        Все это позволит посетителю
-                                        получить
-                                        исчерпывающие сведения <br>о компании или частном лице.</p>
+                                <div class="work__card-content">
+                                    <h3 class="work__card-title">Проект Prime</h3>
+                                    <p class="work__card-text">Маркетинг</p>
                                 </div>
-                            </div>
-                            <div class="work__card-content">
-                                <h3 class="work__card-title">Проект LAB</h3>
-                                <p class="work__card-text">Маркетинг</p>
-                            </div>
-                        </a>
-                    </li>
-                    <li class="work__item">
-                        <a href="" class="work__link">
-                            <div class="work__card-thumb">
-                                <img srcset="
-                      ./images/portfolio/portfolio9-354.jpg 354w,
-                      ./images/portfolio/portfolio9-370.jpg 370w,
-                      ./images/portfolio/portfolio9-450.jpg 450w,
-                      ./images/portfolio/portfolio9-708.jpg 708w,
-                      ./images/portfolio/portfolio9-740.jpg 740w,
-                      ./images/portfolio/portfolio9-900.jpg 900w
-                    "
-                    sizes="(min-width: 1200px) 370px, (min-width: 768px) 354px, 100vw"
-                    src="./images/portfolio/portfolio9-450.jpg" 
-                                            alt="Ноутбук" 
-                                            width="370" 
-                                            height="294">
-                                <div class="work__overlay">
-                                    <p class="work__pre-text">Ресурс предлагает комплексные предложения с разным уровнем функционала и
-                                        сервисов.
-                                        Все это позволит посетителю
-                                        получить
-                                        исчерпывающие сведения <br>о компании или частном лице.</p>
+                            </a>
+                        </li>
+                        <li class="work__item">
+                            <a href="" class="work__link">
+                                <div class="work__card-thumb">
+                                    <img srcset="
+                                      ./images/portfolio/portfolio5-354.jpg 354w,
+                                      ./images/portfolio/portfolio5-370.jpg 370w,
+                                      ./images/portfolio/portfolio5-450.jpg 450w,
+                                      ./images/portfolio/portfolio5-708.jpg 708w,
+                                      ./images/portfolio/portfolio5-740.jpg 740w,
+                                      ./images/portfolio/portfolio5-900.jpg 900w
+                                    " sizes="(min-width: 1200px) 370px, (min-width: 768px) 354px, 100vw"
+                                        src="./images/portfolio/portfolio5-450.jpg" alt="Проект коробки" width="370" height="294">
+                                    <div class="work__overlay">
+                                        <p class="work__pre-text">Ресурс предлагает комплексные предложения с разным уровнем функционала
+                                            и
+                                            сервисов.
+                                            Все это позволит посетителю
+                                            получить
+                                            исчерпывающие сведения <br>о компании или частном лице.</p>
+                                    </div>
                                 </div>
-                            </div>
-                            <div class="work__card-content">
-                                <h3 class="work__card-title">Growing Business</h3>
-                                <p class="work__card-text">Приложение</p>
-                            </div>
-                        </a>
-                    </li>
-                </ul> -->
+                                <div class="work__card-content">
+                                    <h3 class="work__card-title">Проект Boxes</h3>
+                                    <p class="work__card-text">Приложение</p>
+                                </div>
+                            </a>
+                        </li>
+                        <li class="work__item">
+                            <a href="" class="work__link">
+                                <div class="work__card-thumb">
+                                    <img srcset="
+                                      ./images/portfolio/portfolio6-354.jpg 354w,
+                                      ./images/portfolio/portfolio6-370.jpg 370w,
+                                      ./images/portfolio/portfolio6-450.jpg 450w,
+                                      ./images/portfolio/portfolio6-708.jpg 708w,
+                                      ./images/portfolio/portfolio6-740.jpg 740w,
+                                      ./images/portfolio/portfolio6-900.jpg 900w
+                                    " sizes="(min-width: 1200px) 370px, (min-width: 768px) 354px, 100vw"
+                                        src="./images/portfolio/portfolio6-450.jpg" alt="Монітор" width="370" height="294">
+                                    <div class="work__overlay">
+                                        <p class="work__pre-text">Ресурс предлагает комплексные предложения с разным уровнем функционала
+                                            и
+                                            сервисов.
+                                            Все это позволит посетителю
+                                            получить
+                                            исчерпывающие сведения <br>о компании или частном лице.</p>
+                                    </div>
+                                </div>
+                                <div class="work__card-content">
+                                    <h3 class="work__card-title">Inspiration has no Borders</h3>
+                                    <p class="work__card-text">Веб-сайт</p>
+                                </div>
+                            </a>
+                        </li>
+                        <li class="work__item">
+                            <a href="" class="work__link">
+                                <div class="work__card-thumb">
+                                    <img srcset="
+                                      ./images/portfolio/portfolio7-354.jpg 354w,
+                                      ./images/portfolio/portfolio7-370.jpg 370w,
+                                      ./images/portfolio/portfolio7-450.jpg 450w,
+                                      ./images/portfolio/portfolio7-708.jpg 708w,
+                                      ./images/portfolio/portfolio7-740.jpg 740w,
+                                      ./images/portfolio/portfolio7-900.jpg 900w
+                                    " sizes="(min-width: 1200px) 370px, (min-width: 768px) 354px, 100vw"
+                                        src="./images/portfolio/portfolio7-450.jpg" alt="Книжка" width="370" height="294">
+                                    <div class="work__overlay">
+                                        <p class="work__pre-text">Ресурс предлагает комплексные предложения с разным уровнем функционала
+                                            и
+                                            сервисов.
+                                            Все это позволит посетителю
+                                            получить
+                                            исчерпывающие сведения <br>о компании или частном лице.</p>
+                                    </div>
+                                </div>
+                                <div class="work__card-content">
+                                    <h3 class="work__card-title">Издание Limited Edition</h3>
+                                    <p class="work__card-text">Дизайн</p>
+                                </div>
+                            </a>
+                        </li>
+                        <li class="work__item">
+                            <a href="" class="work__link">
+                                <div class="work__card-thumb">
+                                    <img srcset="
+                                      ./images/portfolio/portfolio8-354.jpg 354w,
+                                      ./images/portfolio/portfolio8-370.jpg 370w,
+                                      ./images/portfolio/portfolio8-450.jpg 450w,
+                                      ./images/portfolio/portfolio8-708.jpg 708w,
+                                      ./images/portfolio/portfolio8-740.jpg 740w,
+                                      ./images/portfolio/portfolio8-900.jpg 900w
+                                    " sizes="(min-width: 1200px) 370px, (min-width: 768px) 354px, 100vw"
+                                        src="./images/portfolio/portfolio8-450.jpg" alt="Бірка" width="370" height="294">
+                                    <div class="work__overlay">
+                                        <p class="work__pre-text">Ресурс предлагает комплексные предложения с разным уровнем функционала
+                                            и
+                                            сервисов.
+                                            Все это позволит посетителю
+                                            получить
+                                            исчерпывающие сведения <br>о компании или частном лице.</p>
+                                    </div>
+                                </div>
+                                <div class="work__card-content">
+                                    <h3 class="work__card-title">Проект LAB</h3>
+                                    <p class="work__card-text">Маркетинг</p>
+                                </div>
+                            </a>
+                        </li>
+                        <li class="work__item">
+                            <a href="" class="work__link">
+                                <div class="work__card-thumb">
+                                    <img srcset="
+                                      ./images/portfolio/portfolio9-354.jpg 354w,
+                                      ./images/portfolio/portfolio9-370.jpg 370w,
+                                      ./images/portfolio/portfolio9-450.jpg 450w,
+                                      ./images/portfolio/portfolio9-708.jpg 708w,
+                                      ./images/portfolio/portfolio9-740.jpg 740w,
+                                      ./images/portfolio/portfolio9-900.jpg 900w
+                                    " sizes="(min-width: 1200px) 370px, (min-width: 768px) 354px, 100vw"
+                                        src="./images/portfolio/portfolio9-450.jpg" alt="Ноутбук" width="370" height="294">
+                                    <div class="work__overlay">
+                                        <p class="work__pre-text">Ресурс предлагает комплексные предложения с разным уровнем функционала
+                                            и
+                                            сервисов.
+                                            Все это позволит посетителю
+                                            получить
+                                            исчерпывающие сведения <br>о компании или частном лице.</p>
+                                    </div>
+                                </div>
+                                <div class="work__card-content">
+                                    <h3 class="work__card-title">Growing Business</h3>
+                                    <p class="work__card-text">Приложение</p>
+                                </div>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
             </div>
+            
         </section>
     </main>
     <footer class="footer">

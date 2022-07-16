@@ -13,8 +13,13 @@
     flex-wrap: wrap;
     row-gap: 15px;
     column-gap: 8px;
-
-    @include tablet {
+    margin-bottom: 40px;
+    @media screen and (min-width: 768px) {
+        margin-bottom: 30px;
+        justify-content: center;
+    }
+    @media screen and (min-width: 1200px) {
+        margin-bottom: 50px;
         justify-content: center;
     }
 }
@@ -92,12 +97,19 @@
 .work__list {
     display: flex;
     flex-wrap: wrap;
-    padding-left: 0;
-    justify-content: space-between;
+    gap: 30px;
 }
 
 .work__item {
-    display: inline-block;
+    flex-basis: 100%;
+
+    @include tablet {
+        flex-basis: calc((100% - 30px) / 2);
+    }
+
+    @include desktop {
+        flex-basis: calc((100% - 30px * 2) / 3);
+    }
 }
 
 .work__link {
