@@ -1,7 +1,12 @@
 .do {
     padding-bottom: 94px;
+    @include mobile-tablet-only {
+        display: none;
+    }
 }
-
+// .do__container {
+//     display: none;
+// }
 .do__list {
     display: flex;
     padding-left: 0;

@@ -1,83 +1,67 @@
 .main-decision {
-    background-color: #2F303A;
-    background-image:
-        linear-gradient(rgba(47, 48, 58, 0.4),
-            rgba(47, 48, 58, 0.4)),
-        url(../images/background.jpg);
-    background-repeat: no-repeat;
+padding-top: 118px;
+    padding-bottom: 118px;
+
+    text-align: center;
+    color: #FFFFFF;
+
+    background-color: #2f303a;
+    background-image: linear-gradient(to bottom, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
+        url('../images/hero/hero-mobile.jpg');
     background-position: center;
+    background-repeat: no-repeat;
     background-size: cover;
-    padding: 200px 0;
+
     @include ratio2 {
+        background-image: linear-gradient(to bottom, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
+            url('../images/hero/hero-mobile@2x.jpg');
+    }
+
+    @include tablet {
+        background-image: linear-gradient(to bottom, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
+            url('../images/hero/hero-tablet.jpg');
+
+        @include ratio2 {
             background-image: linear-gradient(to bottom, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
-                url('../images/hero/hero-mobile@2x.jpg');
+                url('../images/hero/hero-tablet@2x.jpg');
         }
-    
-        @include tablet {
+    }
+
+    @include desktop {
+        padding-top: 200px;
+        padding-bottom: 200px;
+
+        background-image: linear-gradient(to bottom, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
+            url('../images/hero/hero-desktop.jpg');
+
+        @include ratio2 {
             background-image: linear-gradient(to bottom, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
-                url('../images/hero/hero-tablet.jpg');
-    
-            @include ratio2 {
-                background-image: linear-gradient(to bottom, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
-                    url('../images/hero/hero-tablet@2x.jpg');
-            }
+                url('../images/hero/hero-desktop@2x.jpg');
         }
-    
-        @include desktop {
-            padding-top: 200px;
-            padding-bottom: 200px;
-    
-            background-image: linear-gradient(to bottom, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
-                url('../images/hero/hero-desktop.jpg');
-    
-            @include ratio2 {
-                background-image: linear-gradient(to bottom, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
-                    url('../images/hero/hero-desktop@2x.jpg');
-            }
-        }
+    }
 }
 
 .main-decision__title {
+    max-width: 360px;
+    margin-bottom: 30px;
+    margin-left: auto;
+    margin-right: auto;
+
     font-family: 'Roboto';
     font-style: normal;
     font-weight: 900;
-    font-size: 44px;
-    line-height: 1.36;
-    text-align: center;
-    align-items: center;
+    font-size: 26px;
+    line-height: 1.62;
     letter-spacing: 0.06em;
     text-transform: uppercase;
+    text-align: center;
     color: #FFFFFF;
-    width: 696px;
-    height: 120px;
-    margin: 0 auto 30px;
-    @include tablet {
-        font-style: normal;
-        font-weight: 900;
-        font-size: 26px;
-        line-height: 42px;
-        text-align: center;
-        letter-spacing: 0.06em;
-        text-transform: uppercase;
-        width: 360px;
-        height: 84px;
-        margin-left: 204px;
-    }
+
     @include desktop {
-        font-family: 'Roboto';
-    font-style: normal;
-    font-weight: 900;
-    font-size: 44px;
-    line-height: 1.36;
-    text-align: center;
-    align-items: center;
-    letter-spacing: 0.06em;
-    text-transform: uppercase;
-    color: #FFFFFF;
-    width: 696px;
-    height: 120px;
-    margin: 0 auto 30px;
-    }
+        max-width: 696px;
+        font-size: 44px;
+        line-height: 1.36;
+    }   
 }
 
 .main-decision__button {
@@ -96,13 +80,5 @@
     cursor: pointer;
     padding: 10px 32px;
     margin: 0 auto;
-    @include tablet {
-        margin: 0;
-        margin-left: 284px;
-        margin-top: 30px;
-    }
-    @include desktop {
-        margin: 0 auto;
-    }
 }
 

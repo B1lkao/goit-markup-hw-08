@@ -16,7 +16,9 @@
 }
 .header__container {
     display: flex;
-      @include tablet {
+    padding-top: 10px;
+    padding-bottom: 10px;
+    @include tablet {
     max-width: $tablet-width;
     padding-top: 0;
     padding-bottom: 0;
