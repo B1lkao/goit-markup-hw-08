@@ -1314,22 +1314,22 @@ img {
   color: #2196F3;
 }
 
-.header__mobile-open-btn {
+.mobile-open-btn {
   display: block;
   margin-left: auto;
 }
 @media screen and (min-width: 768px) {
-  .header__mobile-open-btn {
+  .mobile-open-btn {
     display: none;
   }
 }
 
-.header__mobile-close-btn {
+.mobile-close-btn {
   display: block;
   margin-left: auto;
 }
 @media screen and (min-width: 768px) {
-  .header__mobile-close-btn {
+  .mobile-close-btn {
     display: none;
   }
 }
