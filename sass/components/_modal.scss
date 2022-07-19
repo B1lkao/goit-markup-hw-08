@@ -4,11 +4,10 @@
         top: 0;
         left: 0;
         padding: 15px;
-        margin-top: 93px;
     
         display: flex;
         justify-content: center;
-        align-items: flex-start;
+        align-items: center;
         width: 100%;
         height: 100%;
     
@@ -27,11 +26,7 @@
             transform: scale(2);
         }
 
-    @include tablet {
-        padding-top: 208px;
-        padding-left: 159px;
-        padding-right: 159px;
-    }
+
     @include desktop {
         align-items: center;
         padding: 0;
